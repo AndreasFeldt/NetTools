@@ -95,4 +95,4 @@ if($choice -eq 9){
     ping $trac
 }
 pause
-powershell -ExecutionPolicy ByPass -noexit "& ""FULL LOCATION OF THE POWERSHELL SCRIPT"""
+powershell -ExecutionPolicy ByPass -noexit "FULL LOCATION OF THE POWERSHELL SCRIPT"
