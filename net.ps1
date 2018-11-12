@@ -8,6 +8,8 @@
     echo "Type 5 to turn off Windows Firewall"
     echo "Type 6 to turn on Windows Firewall"
     echo "Type 7 to internet connectivity"
+    echo "Type 8 to ping a host"
+    echo "Type 9 to run a tracert"
     $choice = Read-Host "Selection"
 
 
@@ -79,6 +81,18 @@ if($choice -eq 6){
 if($choice -eq 7){
     cls
     ping 8.8.8.8
+}
+
+if($choice -eq 8){
+    cls
+    $pc = Read-Host "Enter host IP"
+    ping $pc
+}
+
+if($choice -eq 9){
+    cls
+    $trac = Read-Host "Enter host IP"
+    ping $trac
 }
 pause
 powershell -ExecutionPolicy ByPass -noexit "& ""FULL LOCATION OF THE POWERSHELL SCRIPT"""
